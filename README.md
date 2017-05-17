@@ -60,13 +60,3 @@ To run the Angular tests
 ```
 karma start karma.conf.webpack.js
 ```
-
-## Tools
-
-[angularjs]: https://angularjs.org/
-[bower]: http://bower.io/
-[git]: https://git-scm.com/
-[jasmine]: https://jasmine.github.io/
-[karma]: https://karma-runner.github.io/
-[node]: https://nodejs.org/
-[npm]: https://www.npmjs.org/
