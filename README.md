@@ -1,4 +1,4 @@
-# `angularHybrid` — the seed for an AngularJS - Angular hybrid.
+# `angularHybrid` — the seed for an AngularJS/Angular hybrid.
 
 This project is a simple hybrid AngularJS/Angular application with WebPack. The aim of this project is to aid developers starting their journey of upgrading an AngularJS application in small chunks over to Angular.
 
