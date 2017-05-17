@@ -4,7 +4,10 @@ import { BarComponent } from './bar.component';
 describe('App', () => {
     
   beforeEach(() => {
-    TestBed.configureTestingModule({ declarations: [BarComponent]});
+    TestBed.configureTestingModule({ 
+      declarations: [BarComponent],
+      providers: [{ provide: 'barService', useValue: { getData: () => {} } }]
+    });
   });
 
   it ('should work', () => {

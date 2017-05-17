@@ -21,7 +21,7 @@ class HybridUrlHandlingStrategy implements UrlHandlingStrategy {
     CommonModule,
     BrowserModule,
     UpgradeModule,
-    RouterModule.forRoot([]),
+    RouterModule.forRoot([], { initialNavigation: false }),
     BarModule
   ],
   providers: [
