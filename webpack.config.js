@@ -8,7 +8,7 @@ module.exports = {
 
   output: {
     path: helpers.root('dist'),
-    publicPath: '/',
+    publicPath: '',
     filename: '[name].js',
     chunkFilename: '[id].chunk.js'
   },
@@ -69,7 +69,7 @@ module.exports = {
     }),
 
     new HtmlWebpackPlugin({
-      template: './app/index.html'
+      template: 'index.html'
     }),
     new ExtractTextPlugin('[name].css')
   ],

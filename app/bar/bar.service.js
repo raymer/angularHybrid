@@ -1,7 +1,7 @@
 'use strict';
 
 angular
-  .module('myApp.bar')
+  .module('myApp')
   .service('barService', barService);
 
 function barService($q) {
