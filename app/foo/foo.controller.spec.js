@@ -8,7 +8,7 @@ describe('foo module', function() {
 
     it('should ....', inject(function($controller) {
       //spec body
-      var fooController = $controller('fooController');
+      var fooController = $controller('FooController');
       expect(fooController).toBeDefined();
     }));
 

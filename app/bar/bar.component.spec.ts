@@ -1,16 +1,14 @@
-// 'use strict';
+import { TestBed } from '@angular/core/testing';
+import { BarComponent } from './bar.component';
 
-// describe('foo module', function() {
+describe('App', () => {
+    
+  beforeEach(() => {
+    TestBed.configureTestingModule({ declarations: [BarComponent]});
+  });
 
-//   beforeEach(module('myApp.foo'));
-
-//   describe('foo controller', function(){
-
-//     it('should ....', inject(function($controller) {
-//       //spec body
-//       var fooController = $controller('fooController');
-//       expect(fooController).toBeDefined();
-//     }));
-
-//   });
-// });
+  it ('should work', () => {
+    let fixture = TestBed.createComponent(BarComponent);
+    expect(fixture.componentInstance instanceof BarComponent).toBe(true, 'should create BarComponent');
+  });
+});

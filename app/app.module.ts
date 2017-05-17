@@ -16,16 +16,12 @@ class HybridUrlHandlingStrategy implements UrlHandlingStrategy {
   merge(url: UrlTree, whole: UrlTree) { return url; }
 }
 
-const appRoutes: Routes = [
-  { path: 'test', component: AppComponent }
-];
-
 @NgModule({
   imports: [
     CommonModule,
     BrowserModule,
     UpgradeModule,
-    RouterModule.forRoot(appRoutes),
+    RouterModule.forRoot([]),
     BarModule
   ],
   providers: [
