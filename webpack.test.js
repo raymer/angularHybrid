@@ -15,7 +15,7 @@ module.exports = {
         loaders: [
           {
             loader: 'awesome-typescript-loader',
-            options: { configFileName: helpers.root('src', 'tsconfig.json') }
+            options: { configFileName: 'tsconfig.json' }
           } , 'angular2-template-loader'
         ]
       },
@@ -30,12 +30,12 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        exclude: helpers.root('src', 'app'),
+        exclude: helpers.root('./', 'app'),
         loader: 'null-loader'
       },
       {
         test: /\.css$/,
-        include: helpers.root('src', 'app'),
+        include: helpers.root('./', 'app'),
         loader: 'raw-loader'
       }
     ]
@@ -44,8 +44,8 @@ module.exports = {
   plugins: [
     new webpack.ContextReplacementPlugin(
       // The (\\|\/) piece accounts for path separators in *nix and Windows
-      /angular(\\|\/)core(\\|\/)(esm(\\|\/)src|src)(\\|\/)linker/,
-      helpers.root('./src'), // location of your src
+      /angular(\\|\/)core(\\|\/)@angular/,
+      helpers.root('./', 'app'), // location of your src
       {} // a map of your routes
     )
   ]
