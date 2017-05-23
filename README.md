@@ -44,7 +44,7 @@ this server is:
 npm start
 ```
 
-Now browse to the app at [`http://localhost:8000/#/foo`][local-app-url].
+Now browse to the app at `http://localhost:8000/#/foo`.
 
 
 ### Running Unit Tests
