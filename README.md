@@ -18,7 +18,7 @@ Clone the `angularHybrid` repository using git:
 
 ```
 git clone https://github.com/raymer/angularHybrid.git
-cd angular-seed
+cd angularHybrid
 ```
 
 ### Install Dependencies
